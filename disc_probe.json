@@ -1,0 +1,31 @@
+{
+  "cue_path": "G:\\Games\\PSXRecomp\\discs\\Detana TwinBee\\Detana Twinbee Yahoo! Deluxe Pack (Japan).cue",
+  "cue_name": "Detana Twinbee Yahoo! Deluxe Pack (Japan).cue",
+  "bin_name": "Detana Twinbee Yahoo! Deluxe Pack (Japan).bin",
+  "track_count": 1,
+  "data_track_size": 400077552,
+  "data_track_md5": "0833a33a52ff3f7c82cc0f1bca40a61b",
+  "data_track_sha1": "2836bd29b22f669c43af19f78fb12b2619bd4022",
+  "data_track_crc32": "1a63cd64",
+  "boot_exe": "SLPS_001.00",
+  "serial": "SLPS-00100",
+  "serial_exe": "SLPS_001.00",
+  "volume_id": "",
+  "display_name": "DetanaTwinBee",
+  "load_address": "0x80010000",
+  "entry_pc": "0x8001D250",
+  "text_size": "0x0003E800",
+  "stack_base": "0xEF7E5241",
+  "require_cue": true,
+  "required_disc_fp": "e8faf13e6987ec4d5eb5de3ff358fa84e67134641f2034ed0d8da43e797c7e5c",
+  "boot_exe_sha256": "5744a61cc86da9bf3beb35a5c0b4ffc7b832c1df7688dbf42aca9fc58a963278",
+  "seed_count": 351,
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

@@ -1,0 +1,54 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "DetanaTwinBee"
+id = "SLPS-00100"
+players = 1
+exe = "disc/SLPS_001.00"
+disc = "G:\\Games\\PSXRecomp\\discs\\Detana TwinBee\\Detana Twinbee Yahoo! Deluxe Pack (Japan).cue"
+load_address = "0x80010000"
+entry_pc = "0x8001D250"
+text_size = "0x0003E800"
+stack_base = "0xEF7E5241"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Detana Twinbee Yahoo! Deluxe Pack (Japan).bin"
+cue_name = "Detana Twinbee Yahoo! Deluxe Pack (Japan).cue"
+boot_exe = "SLPS_001.00"
+known_sizes = [400077552]
+known_md5 = [
+  "0833a33a52ff3f7c82cc0f1bca40a61b",
+]
+known_sha1 = [
+  "2836bd29b22f669c43af19f78fb12b2619bd4022",
+]
+known_crc32 = [
+  "1a63cd64",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "DetanaTwinBee Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "e8faf13e6987ec4d5eb5de3ff358fa84e67134641f2034ed0d8da43e797c7e5c"
