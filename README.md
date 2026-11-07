@@ -6,6 +6,12 @@
 [![Latest release](https://img.shields.io/github/v/release/switchmaxfx/DetanaTwinBeeRecomp?include_prereleases&label=release)](https://github.com/switchmaxfx/DetanaTwinBeeRecomp/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/switchmaxfx/DetanaTwinBeeRecomp/total)](https://github.com/switchmaxfx/DetanaTwinBeeRecomp/releases)
 
+<!-- retcomm-readme-boxart -->
+<p align="center">
+  <img width="500" height="500" alt="slps00100front" src="https://github.com/user-attachments/assets/e84437e1-1ecd-4ae6-a0a4-ff193d374066" />
+</p>
+<!-- /retcomm-readme-boxart -->
+
 A static recompilation of the Japanese PlayStation release of **Detana TwinBee
 Yahho! Deluxe Pack** (SLPS-00100) into a native Windows executable, built on
 [PSXRecomp](https://github.com/RetroPortingToolKit/psxrecomp) and
@@ -155,6 +161,7 @@ for toolchain setup.
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/Ad9BwSzctP"><img src=".github/raid-discord.png" alt="Join the Retro AI Development (R.A.I.D.) Discord" width="200"></a>
+  <a href="https://discord.gg/Ad9BwSzctP"><img src="https://github.com/user-attachments/assets/4f41a68b-2bcb-4488-805c-243eb9dd6d32" alt="Join the Retro AI Development (R.A.I.D.) Discord" width="200"></a>
 </p>
 <!-- /retcomm-readme-raid -->
+
