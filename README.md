@@ -1,131 +1,186 @@
-# DetanaTwinBee Recompiled
+# Detana TwinBee Yahho! Deluxe Pack Recompiled
 
-<!-- retcomm-readme-metrics -->
-[![GitHub downloads (all assets, all releases)](https://img.shields.io/github/downloads/RetroPortingToolKit/detana-twin-bee-recomp/total)](https://github.com/RetroPortingToolKit/detana-twin-bee-recomp/releases)
-[![GitHub downloads (latest release)](https://img.shields.io/github/downloads/RetroPortingToolKit/detana-twin-bee-recomp/latest/total)](https://github.com/RetroPortingToolKit/detana-twin-bee-recomp/releases/latest)
-[![GitHub release](https://img.shields.io/github/v/release/RetroPortingToolKit/detana-twin-bee-recomp)](https://github.com/RetroPortingToolKit/detana-twin-bee-recomp/releases/latest)
-<!-- /retcomm-readme-metrics -->
+> **Preview build.** This is an in-progress port, not a finished one. Expect
+> rough edges. Bug reports, test results and pull requests are welcome.
 
-Static recompilation of **DetanaTwinBee** built on
-[psxrecomp](https://github.com/mstan/psxrecomp) and
+[![Latest release](https://img.shields.io/github/v/release/switchmaxfx/DetanaTwinBeeRecomp?include_prereleases&label=release)](https://github.com/switchmaxfx/DetanaTwinBeeRecomp/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/switchmaxfx/DetanaTwinBeeRecomp/total)](https://github.com/switchmaxfx/DetanaTwinBeeRecomp/releases)
+
+<!-- retcomm-readme-boxart -->
+<p align="center">
+  <img width="500" height="500" alt="slps00100front" src="https://github.com/user-attachments/assets/e84437e1-1ecd-4ae6-a0a4-ff193d374066" />
+</p>
+<!-- /retcomm-readme-boxart -->
+
+A static recompilation of the Japanese PlayStation release of **Detana TwinBee
+Yahho! Deluxe Pack** (SLPS-00100) into a native Windows executable, built on
+[PSXRecomp](https://github.com/RetroPortingToolKit/psxrecomp) and
 [recomp-ui](https://github.com/RetroPortingToolKit/recomp-ui).
 
-_Add a short pitch in catalog_identity.json / README._
+You need your own copy of the game. This repository contains no disc images,
+no BIOS and no game assets.
 
 | | |
 |---|---|
-| Players | 1 |
-| Region | Japan |
-| Publisher | - |
-| Year | - |
+| **Players** | 1–2 |
+| **Region** | Japan (NTSC-J) |
+| **Serial** | SLPS-00100 |
+| **Developer / Publisher** | Konami |
+| **Original release** | September 29, 1995 (PlayStation & Sega Saturn) |
+| **Genre** | Vertical-scrolling shooter ("cute 'em up") compilation |
 
-Scaffolded with the New Project Layout. See
-`psxrecomp/docs/GAME_PROJECT_SETUP.md` for the full flow.
-
-<!-- retcomm-readme-launcher -->
-## Retro Launcher
-
-You can run this title **standalone** (download the release zip, point it at
-your disc, play), or manage installs, updates, and disc/BIOS wiring with
-**[Retro Launcher](https://github.com/RetroPortingToolKit/Retro-Launcher)** —
-the Retro Compilation Manager hub for self-compiling recomps.
-
-[Downloads](https://github.com/RetroPortingToolKit/Retro-Launcher/releases) ·
-[Full README & features](https://github.com/RetroPortingToolKit/Retro-Launcher#readme)
+## About the game
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/RetroPortingToolKit/Retro-Launcher/main/docs/screenshots/hub-and-game-launcher.png" alt="Retro hub with a background build, next to a title’s recomp-ui launcher" width="720">
+  <a href="https://www.youtube.com/watch?v=3HQb2dMSZyQ"><img src="https://img.youtube.com/vi/3HQb2dMSZyQ/hqdefault.jpg" alt="Detana TwinBee Yahho! Deluxe Pack on PlayStation - gameplay video" width="560"></a>
+  <br>
+  <sub>▶ Watch on YouTube: TwinBee Yahho! gameplay from the PlayStation Deluxe Pack (video by ゲーム燃焼チャンネル彩)</sub>
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/RetroPortingToolKit/Retro-Launcher/main/docs/screenshots/queue-and-background-build.png" alt="Background cmake build with titles queued" width="720">
-</p>
+*Detana TwinBee Yahho! Deluxe Pack* (出たなツインビーヤッホー! DELUXE PACK) is
+Konami's two-in-one compilation of TwinBee arcade shooters, released in Japan
+only for the PlayStation and Sega Saturn. It came out the year of the series'
+10th anniversary and was later reissued on PlayStation as a *PlayStation the
+Best* (SLPM-86054) and *PSone Books* (SLPM-87322) budget title.
 
-Retro checks for updates, installs the prebuilt release zips, and automates
-BIOS/ROM/save plumbing so you are not stuck repeating each game’s first run by hand.
-<!-- /retcomm-readme-launcher -->
+It includes:
+
+- **Detana!! TwinBee** (1991 arcade). Released in Europe as *Bells &
+  Whistles*. Pilot TwinBee and WinBee, shoot clouds to juggle bells, and
+  collect them for power-ups. The home versions don't support the arcade's
+  vertical (TATE) screen orientation.
+- **TwinBee Yahho! Fushigi no Kuni de Ōabare!!** (1995 arcade). The direct
+  sequel, which hit Japanese arcades only months before this disc. This
+  compilation was its first home release, and the console versions add extra
+  voice acting. A US arcade version was planned as *Magical TwinBee* but never
+  released.
+
+Both games support two-player simultaneous co-op.
+
+## Status
+
+| Area | State |
+|---|---|
+| Boot (bundled OpenBIOS) | Working |
+| Compilation menu | Working |
+| Detana!! TwinBee | Playable |
+| TwinBee Yahho! | Playable |
+| Controller (digital / D-pad mode) | Working |
+| Controller (analog mode) | Not supported by the game, see below |
+| Saves / memory cards | Untested |
+| Two-player | Untested |
+
+**Latest release:** none yet.
+
+## Platform support
+
+| Platform | State |
+|---|---|
+| Windows (x64) | Tested |
+| Linux | Untested |
+| macOS | Untested |
+
+So far this port has only been built and tested on **Windows**. The PSXRecomp
+framework also supports Linux and macOS, so building from source there may
+work, but there are no releases or test results for those platforms yet.
+Reports from Linux or macOS users are welcome.
+
+## Setup
+
+### Release package (recommended)
+
+1. Download the latest Windows zip from
+   [Releases](https://github.com/switchmaxfx/DetanaTwinBeeRecomp/releases) and
+   extract it anywhere.
+2. Run `DetanaTwinBee_Recompiled.exe`. The launcher opens.
+3. Point it at your own disc image. Use a `.cue` with all its `.bin` files
+   next to it (`.chd` and `.iso` also work).
+4. In the launcher's controller settings, set your controller to
+   **D-pad (digital)** mode.
+5. Start the game.
+
+A retail BIOS is optional. The bundled open-source OpenBIOS boots the game.
+
+### Controllers
+
+Keyboard and Xbox-style controllers work out of the box. F11 or Alt+Enter
+toggles fullscreen.
+
+> **Use D-pad (digital) mode.** This 1995 disc predates analog controllers,
+> so if the pad is set to analog, the game sees an unknown controller and
+> ignores all input. In digital mode the left stick works as the D-pad too.
+
+Default keyboard layout:
+
+| PlayStation | Keyboard |
+|---|---|
+| D-pad | Arrow keys |
+| Cross / Circle / Square / Triangle | X / S / Z / A |
+| L1 / R1 / L2 / R2 | Q / W / E / R |
+| Start / Select | Enter / Right Shift |
+
+## What this repository is
+
+The game config, analysis seeds, build glue and generated C for this title.
+It does **not** contain the disc image, a BIOS, or any game assets.
+
+| Path | Purpose |
+|---|---|
+| `game.toml` | Recompiler config for SLPS-00100 |
+| `seeds/`, `symbols.toml` | Function seeds and symbols for the boot EXE |
+| `generated/` | Recompiled game C (produced from the disc by `psxrecomp-game`) |
+| `psxrecomp/` | PSXRecomp framework (git submodule) |
+| `recomp-ui/` | Launcher UI (git submodule) |
+| `packaging/` | Release packaging config |
+
+## Building from source
+
+On Windows, using the
+[cmake-clang toolchain](https://github.com/RetroPortingToolKit/RetroPorting-Toolchains/releases/latest)
+and your own disc:
+
+```sh
+git clone --recurse-submodules https://github.com/switchmaxfx/DetanaTwinBeeRecomp.git
+cd DetanaTwinBeeRecomp
+./psxrecomp/tools/ci/build_emitters.sh
+python psxrecomp/psxrecomp_cli.py generate --config game.toml --project-root . --disc <path to your .cue>
+python psxrecomp/psxrecomp_cli.py rebuild --config game.toml --project-root . --build-dir build-release --no-pgo
+```
+
+See [psxrecomp/docs/BUILDING.md](https://github.com/RetroPortingToolKit/psxrecomp/blob/master/docs/BUILDING.md)
+and [GETTING_STARTED.md](https://github.com/RetroPortingToolKit/psxrecomp/blob/master/docs/GETTING_STARTED.md)
+for toolchain setup.
 
 ## Legal
 
-You must own the original game. Disc images under `disc/` are gitignored and
-must never be committed. Retail BIOS dumps are not redistributed and no C
-derived from one may be committed; releases run on the bundled MIT OpenBIOS.
+- You must own the original game. Disc images and retail BIOS dumps are never
+  committed or redistributed.
+- Releases run on the bundled MIT-licensed
+  [OpenBIOS](https://github.com/grumpycoders/pcsx-redux/tree/main/src/mips/openbios).
+- Don't share `overlay_captures.json` publicly. It contains code captured from
+  the disc.
+- *TwinBee* and all related titles, characters and assets are trademarks and
+  copyrights of Konami. This is an unofficial fan project, not affiliated with
+  or endorsed by Konami.
+- The PSXRecomp framework is licensed under PolyForm Noncommercial 1.0.0. See
+  the framework's `LICENSE` and `THIRD_PARTY_ATTRIBUTION.md`.
 
-`generated/` (the recompiled game C) **is committed**: releases ship the
-compiled game, built by CI from that tree. Regenerate and commit it whenever
-seeds or the framework pin change.
+## Credits
 
-Default app icon: `assets/psxrecomp.ico` (and `.png` / `.svg`) — Retro-themed controller mark from `psxrecomp/assets/`. Windows builds embed it via `APP_ICON`.
+- **Konami**: the original games.
+- **[PSXRecomp](https://github.com/RetroPortingToolKit/psxrecomp)** and
+  **[recomp-ui](https://github.com/RetroPortingToolKit/recomp-ui)**: the
+  RetroPortingToolKit recompilation framework and launcher.
+- **OpenBIOS** from the PCSX-Redux project.
 
-Optional box art under `launcher_assets/img/` may come from
-[libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
-(`Named_Boxarts`); see `BOXART_SOURCE.txt` when present.
-
-## Quick start (dev)
-
-```bash
-git submodule update --init --recursive
-./psxrecomp/tools/ci/build_emitters.sh
-python3 psxrecomp/psxrecomp_cli.py generate \
-  --config game.toml --project-root . --disc disc/<your>.cue
-git add generated && git commit -m "Regenerate game C"
-# Configures, builds, and stages overlay_toolchain/ beside the runtime so
-# streamed overlays can be compiled to native shards (a bare cmake build
-# skips that stage and leaves every overlay gap interpreted).
-python3 psxrecomp/psxrecomp_cli.py rebuild \
-  --config game.toml --project-root . --build-dir build-release --no-pgo
-```
-
-Official optimized Windows/Linux releases use the maintained shared builder
-with the title disc available. Commit the desired `VERSION`, source and
-framework pins, then run:
-
-```bash
-scripts/package_release.sh --channel public
-# Use --channel playtest for a non-public package; --platform selects Windows/Linux.
-```
-
-On Windows PowerShell, use
-`psxrecomp/tools/package_title_release.ps1 --channel public`. The generated
-`packaging/release.toml` and player instructions define the title payload.
-The shared builder owns regeneration, qualified build defaults, fresh private
-PGO boot training on supported native toolchains, staging and verification.
-Boot training is a build step, not gameplay qualification or a performance
-claim. See `psxrecomp/docs/RELEASING_A_TITLE.md`.
-
-The separate *Release builds* CI workflow (tag `vX.Y.Z` or dispatch) builds
-committed `generated/` C without a disc on Linux, Windows and macOS. It uses
-`scripts/package_prebuilt_release.sh` and attaches compiled-game ZIPs. That
-explicit prebuilt path does not train selective PGO and is not the official
-optimized-release command. The common builder does not add macOS support.
-
-Studio's current Export action still uses the old prebuilt argument contract;
-use the shared command above for optimized releases until Studio adopts the
-recipe/channel interface. Its packager detection and `packaging/` warning also
-need that adoption; the generated recipe is maintained configuration, not a
-forked packager.
-
-## Symbols
-
-Progressive map: `symbols.toml` → `python3 tools/sync_symbols.py` →
-`psx_symbols.h` (`PSX_FN_*`). See `psxrecomp/docs/SYMBOLS.md`.
-
-## Framework pins
-
-Submodule gitlinks (`psxrecomp`, optional `recomp-ui`, nested `recomp-net`)
-are authoritative. `framework_pins.txt` is an optional scaffold snapshot;
-release CI logs SHAs with `record_pins.sh` but builds whatever the gitlinks
-resolve to. Bump submodules deliberately — do not float on `main`/`master`
-in release CI.
-
-<!-- retcomm-readme-raid -->
 ---
 
 <p align="center">
-  <sub><b>R.A.I.D. — Retro AI Development</b> · a Discord for AI-assisted retro reverse-engineering, decomp &amp; recomp</sub>
+  <sub><b>R.A.I.D. - Retro AI Development</b> | a Discord for AI-assisted retro reverse-engineering, decomp &amp; recomp</sub>
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/Ad9BwSzctP"><img src=".github/raid-discord.png" alt="Join the Retro AI Development (R.A.I.D.) Discord" width="200"></a>
+  <a href="https://discord.gg/Ad9BwSzctP"><img src="https://github.com/user-attachments/assets/4f41a68b-2bcb-4488-805c-243eb9dd6d32" alt="Join the Retro AI Development (R.A.I.D.) Discord" width="200"></a>
 </p>
 <!-- /retcomm-readme-raid -->
+
