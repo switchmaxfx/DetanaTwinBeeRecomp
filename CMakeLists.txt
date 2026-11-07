@@ -53,6 +53,11 @@ psxrecomp_add_game_runtime(psx-runtime
     GEN_MARKER "generated/SLPS_001.00_dispatch.c"
     GEN_FULL_GLOB "generated/SLPS_001.00_full_*.c"
     CODEGEN_SETUP_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/codegen_setup.c"
+    # Public release packages may not ship the CD-speed / fast-loading
+    # enhancements (psxrecomp/docs/RELEASING_A_TITLE.md).
+    EXCLUDE_BUILTIN_MODS
+        psx.enhancement.cd-speed
+        psx.enhancement.fast-loading
 )
 
 # Stage runtime configs next to the exe for direct build/ launches. Only copy
