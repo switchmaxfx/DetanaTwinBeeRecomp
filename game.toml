@@ -6,7 +6,8 @@ name = "DetanaTwinBee"
 id = "SLPS-00100"
 players = 1
 exe = "disc/SLPS_001.00"
-disc = "G:\\Games\\PSXRecomp\\discs\\Detana TwinBee\\Detana Twinbee Yahoo! Deluxe Pack (Japan).cue"
+# Path to YOUR legal dump (relative to the repo root, or absolute).
+disc = "disc/Detana Twinbee Yahoo! Deluxe Pack (Japan).cue"
 load_address = "0x80010000"
 entry_pc = "0x8001D250"
 text_size = "0x0003E800"

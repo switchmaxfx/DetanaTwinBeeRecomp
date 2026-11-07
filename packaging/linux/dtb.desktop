@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=DetanaTwinBee
+Exec=DetanaTwinBee_Recompiled
+Icon=dtb
+Categories=Game;
+Terminal=false
