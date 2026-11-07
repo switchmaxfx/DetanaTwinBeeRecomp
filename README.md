@@ -31,6 +31,12 @@ no BIOS and no game assets.
 
 ## About the game
 
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=3HQb2dMSZyQ"><img src="https://img.youtube.com/vi/3HQb2dMSZyQ/hqdefault.jpg" alt="Detana TwinBee Yahho! Deluxe Pack on PlayStation - gameplay video" width="560"></a>
+  <br>
+  <sub>▶ Watch on YouTube: TwinBee Yahho! gameplay from the PlayStation Deluxe Pack (video by ゲーム燃焼チャンネル彩)</sub>
+</p>
+
 *Detana TwinBee Yahho! Deluxe Pack* (出たなツインビーヤッホー! DELUXE PACK) is
 Konami's two-in-one compilation of TwinBee arcade shooters, released in Japan
 only for the PlayStation and Sega Saturn. It came out the year of the series'
@@ -65,6 +71,19 @@ Both games support two-player simultaneous co-op.
 | Two-player | Untested |
 
 **Latest release:** none yet.
+
+## Platform support
+
+| Platform | State |
+|---|---|
+| Windows (x64) | Tested |
+| Linux | Untested |
+| macOS | Untested |
+
+So far this port has only been built and tested on **Windows**. The PSXRecomp
+framework also supports Linux and macOS, so building from source there may
+work, but there are no releases or test results for those platforms yet.
+Reports from Linux or macOS users are welcome.
 
 ## Setup
 
